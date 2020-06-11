@@ -10,7 +10,7 @@ class KakakuDotComSpider(scrapy.Spider):
     allowed_domains = ['kakaku.com']
     start_urls = ['https://kakaku.com/item/J0000031201/']
 
-    SLACK_INCOMING_WEBHOOK_URL = 'https://hooks.slack.com/services/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'
+    SLACK_INCOMING_WEBHOOK_URL = os.environ['SLACK_INCOMING_WEBHOOK_URL']
 
     def parse(self, response):
 
