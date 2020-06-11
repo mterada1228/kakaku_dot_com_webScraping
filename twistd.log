@@ -1,0 +1,57 @@
+2020-06-09T22:01:49+0900 [scrapy_do.controller.Controller#info] Creating controller
+2020-06-09T22:01:49+0900 [-] Scrapy-Do web interface is available at http://127.0.0.1:7654/
+2020-06-09T22:01:49+0900 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 20.3.0 (/Users/mterada/dev/webScraping/scraping/bin/python3 3.7.7) starting up.
+2020-06-09T22:01:49+0900 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.selectreactor.SelectReactor.
+2020-06-09T22:01:49+0900 [stderr#error] Traceback (most recent call last):
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/internet/tcp.py", line 1361, in startListening
+2020-06-09T22:01:49+0900 [stderr#error]     skt.bind(addr)
+2020-06-09T22:01:49+0900 [stderr#error] OSError: [Errno 48] Address already in use
+2020-06-09T22:01:49+0900 [stderr#error] During handling of the above exception, another exception occurred:
+2020-06-09T22:01:49+0900 [stderr#error] Traceback (most recent call last):
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/bin/scrapy-do", line 24, in <module>
+2020-06-09T22:01:49+0900 [stderr#error]     app.run(run_app, ScrapyDoRunnerOptions)
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/application/app.py", line 674, in run
+2020-06-09T22:01:49+0900 [stderr#error]     runApp(config)
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/bin/scrapy-do", line 22, in run_app
+2020-06-09T22:01:49+0900 [stderr#error]     _SomeApplicationRunner(config).run()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/application/app.py", line 385, in run
+2020-06-09T22:01:49+0900 [stderr#error]     self.postApplication()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/scripts/_twistd_unix.py", line 254, in postApplication
+2020-06-09T22:01:49+0900 [stderr#error]     self.startApplication(self.application)
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/scripts/_twistd_unix.py", line 442, in startApplication
+2020-06-09T22:01:49+0900 [stderr#error]     service.IService(application).privilegedStartService()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/application/service.py", line 283, in privilegedStartService
+2020-06-09T22:01:49+0900 [stderr#error]     service.privilegedStartService()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/application/service.py", line 283, in privilegedStartService
+2020-06-09T22:01:49+0900 [stderr#error]     service.privilegedStartService()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/application/internet.py", line 114, in privilegedStartService
+2020-06-09T22:01:49+0900 [stderr#error]     self._port = self._getPort()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/application/internet.py", line 142, in _getPort
+2020-06-09T22:01:49+0900 [stderr#error]     'listen%s' % (self.method,))(*self.args, **self.kwargs)
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/internet/posixbase.py", line 495, in listenTCP
+2020-06-09T22:01:49+0900 [stderr#error]     p.startListening()
+2020-06-09T22:01:49+0900 [stderr#error]   File "/Users/mterada/dev/webScraping/scraping/lib/python3.7/site-packages/twisted/internet/tcp.py", line 1363, in startListening
+2020-06-09T22:01:49+0900 [stderr#error]     raise CannotListenError(self.interface, self.port, le)
+2020-06-09T22:01:49+0900 [stderr#error] twisted.internet.error.CannotListenError: Couldn't listen on 127.0.0.1:7654: [Errno 48] Address already in use.
+2020-06-09T22:12:54+0900 [scrapy_do.controller.Controller#info] Creating controller
+2020-06-09T22:12:54+0900 [-] Scrapy-Do web interface is available at http://127.0.0.1:7654/
+2020-06-09T22:12:54+0900 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 20.3.0 (/Users/mterada/dev/webScraping/scraping/bin/python3 3.7.7) starting up.
+2020-06-09T22:12:54+0900 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.selectreactor.SelectReactor.
+2020-06-09T22:12:54+0900 [-] Site starting on 7654
+2020-06-09T22:12:54+0900 [twisted.web.server.Site#info] Starting factory <twisted.web.server.Site object at 0x10ee2ab50>
+2020-06-09T22:12:54+0900 [scrapy_do.controller.Controller#info] Starting controller
+2020-06-09T22:13:07+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:07 +0000] "GET /manifest.json HTTP/1.1" 200 309 "http://localhost:7654/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:13:07+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:07 +0000] "GET /favicon.png HTTP/1.1" 200 702 "http://localhost:7654/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:13:09+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:09 +0000] "GET /service-worker.js HTTP/1.1" 200 1181 "http://localhost:7654/service-worker.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:13:09+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:09 +0000] "GET /precache-manifest.3268877b79ed2c92165cd123f7493889.js HTTP/1.1" 200 748 "http://localhost:7654/service-worker.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:13:10+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:09 +0000] "GET /manifest.json HTTP/1.1" 200 309 "http://localhost:7654/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:13:11+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:11 +0000] "GET /service-worker.js HTTP/1.1" 200 1181 "http://localhost:7654/service-worker.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:13:11+0900 [twisted.python.log#info] "127.0.0.1" - - [09/Jun/2020:13:13:11 +0000] "GET /precache-manifest.3268877b79ed2c92165cd123f7493889.js HTTP/1.1" 200 748 "http://localhost:7654/service-worker.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+2020-06-09T22:14:10+0900 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=62421)
+2020-06-09T22:14:11+0900 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=62417)
+2020-06-09T22:17:30+0900 [-] Received SIGTERM, shutting down.
+2020-06-09T22:17:30+0900 [scrapy_do.controller.Controller#info] Stopping controller
+2020-06-09T22:17:30+0900 [-] (TCP Port 7654 Closed)
+2020-06-09T22:17:30+0900 [twisted.web.server.Site#info] Stopping factory <twisted.web.server.Site object at 0x10ee2ab50>
+2020-06-09T22:17:30+0900 [-] Main loop terminated.
+2020-06-09T22:17:30+0900 [twisted.scripts._twistd_unix.UnixAppLogger#info] Server Shut Down.
